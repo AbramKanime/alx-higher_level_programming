@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    length = len(sentence)
-    first_char = sentence[0]
-
-    if (length == 0):
-        tup = (length, None)
+    if not sentence:
+        return (0, None)
     else:
-        tup = (length, first_char)
-
-    return(tup)
+        return (len(sentence), sentence[0])
